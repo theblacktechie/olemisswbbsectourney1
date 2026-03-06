@@ -19,12 +19,11 @@ The structure and editorial voice are consistent with the *Portal Mami* Senior D
 
 ## Built With
 
-- **React** (via JSX)
-- **Recharts** — bar charts and data visualization
-- **Inter** — primary typeface
+- **Plain HTML + Vanilla JavaScript**: no framework or build step required
+- **Inter**: primary typeface, chosen for its Athletic/Sportico editorial register
 - Inline styles throughout for full design control
 
-> This is a React application. It is not plain HTML. To deploy on GitHub Pages, you will need to build it using a tool like Create React App, Vite, or Next.js and export a static build.
+> This is a single plain HTML file. It opens directly in any browser with no build tools required.
 
 ---
 
@@ -32,11 +31,10 @@ The structure and editorial voice are consistent with the *Portal Mami* Senior D
 
 To host on GitHub Pages:
 
-1. Scaffold a React app: `npm create vite@latest` or `npx create-react-app`
-2. Replace the contents of `App.jsx` with the project source
-3. Install Recharts: `npm install recharts`
-4. Build: `npm run build`
-5. Deploy the `/dist` or `/build` folder to GitHub Pages using `gh-pages` or manually
+1. Create a new repository or use an existing one
+2. Upload `dictate-disrupt-final.html` to the root (rename to `index.html` if needed)
+3. Enable GitHub Pages under **Settings → Pages → Deploy from branch**
+4. Your file will be live at `https://yourusername.github.io/repo-name`
 
 ---
 
