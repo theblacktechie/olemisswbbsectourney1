@@ -1,51 +1,69 @@
-# Dictate & Disrupt
-### Ole Miss WBB vs. Auburn · SEC Tournament · Second Round · March 5, 2026
+# Dictate and Disrupt · Ole Miss WBB · SEC Tournament Night 1
 
-An interactive data visualization built to document and narrate the Ole Miss Women's Basketball program's 73–57 victory over #15 Auburn in the 2026 SEC Women's Basketball Tournament Second Round, held at Bon Secours Wellness Arena in Greenville, S.C.
-
----
-
-## About This Project
-
-This piece is built around the Ole Miss Women's Basketball culture, identity, and motto — **Dictate and Disrupt** — framing the final box score through three editorial acts:
-
-- **Act I · Dictation**: Offensive stats, first-half shooting efficiency, and points by quarter
-- **Act II · Disruption**: Defensive metrics, rebounding dominance, and pressure impact
-- **Act III · The Win**: Top performers, team totals, and full box score
-
-The structure and editorial voice are consistent with the *Portal Mami* Senior Day project published March 1, 2026.
+**Ole Miss 73, Auburn 57 · Second Round · March 5, 2026**
+Bon Secours Wellness Arena · Greenville, S.C.
 
 ---
 
-## Built With
+## Overview
 
-- **Plain HTML + Vanilla JavaScript**: no framework or build step required
-- **Inter**: primary typeface, chosen for its Athletic/Sportico editorial register
-- Inline styles throughout for full design control
+This is the first installment of the Dictate and Disrupt data visualization series covering Ole Miss Women's Basketball's run through the 2026 SEC Tournament. The series documents the team's culture, identity, and performance game by game through an editorial data visualization format inspired by The Athletic and Sportico.
 
-> This is a single plain HTML file. It opens directly in any browser with no build tools required.
+Night 1 covers the second round win over Auburn, in which Ole Miss led wire to wire and never allowed a lead change.
 
 ---
 
-## Deployment
+## The Series
 
-To host on GitHub Pages:
-
-1. Create a new repository or use an existing one
-2. Upload `dictate-disrupt-final.html` to the root (rename to `index.html` if needed)
-3. Enable GitHub Pages under **Settings → Pages → Deploy from branch**
-4. Your file will be live at `https://yourusername.github.io/repo-name`
+| Game | Opponent | Result | Link |
+|------|----------|--------|------|
+| Night 1 | Auburn | W 73-57 | This page |
+| Night 2 | Vanderbilt | W 89-78 | [View](https://theblacktechie.github.io/olemisswbbsectourney2/) |
 
 ---
 
-## Data Sources
+## What Is Inside
 
-- SEC Sports · secsports.com
-- ESPN
-- SEC Network broadcast · March 5, 2026
-- Coach Yolett McPhee-McCuin pregame interview · SEC Network · March 4, 2026
+The viz is structured in three acts, each telling a different part of the game story.
 
-Statistics are final as of the conclusion of the Ole Miss vs. Auburn Second Round Matchup.
+**Act I · Dictation**
+Offensive stats, first half shooting efficiency (63% FG, 67% 3PT), layup conversion, and points by quarter. Ole Miss led 48-20 at halftime.
+
+**Act II · Disruption**
+Defensive metrics and rebounding dominance. Auburn shot 32.7% from the field. Ole Miss outrebounded Auburn 40 to 23.
+
+**Act III · The Win**
+Top performers, team totals, and full box score with tappable player rows.
+
+---
+
+## Key Stats
+
+- Final Score: Ole Miss 73, Auburn 57
+- Halftime: 48-20 Ole Miss
+- Lead Changes: 0
+- Largest Lead: +28
+- Ole Miss FG%: 52.8%
+- Ole Miss 1st Half FG%: 63%
+- Total Rebounds: 40 to 23 Ole Miss
+- Bench Points: 35 to 14 Ole Miss
+- Christeen Iwuala: 18 pts, 8 of 8 FG, longest field goal streak of the season
+
+---
+
+## Quote
+
+Coach Yolett McPhee-McCuin · SEC Network · March 4, 2026
+"The team is back, and we were going to dictate and disrupt for 40 minutes."
+
+---
+
+## Design
+
+- Font: Inter (Google Fonts)
+- Colors: Ole Miss Red #CE1126 · Ole Miss Navy #002147 · Auburn Faint Blue #99AABB
+- Design inspiration: The Athletic and Sportico editorial style
+- Layout: Three-act tabbed structure
 
 ---
 
@@ -53,4 +71,4 @@ Statistics are final as of the conclusion of the Ole Miss vs. Auburn Second Roun
 
 Words, concept, design and strategy by **Kris E. Smith**
 
-Ole Miss Women's Basketball · SEC Tournament · Second Round · March 5, 2026
+Data sourced from SEC Sports, ESPN, and SEC Network broadcast · Final · March 5, 2026
