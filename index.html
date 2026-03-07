@@ -10,16 +10,21 @@
   html, body { height: 100%; }
   body { font-family: 'Inter', 'Helvetica Neue', sans-serif; background: #fff; color: #1A1A1A; }
 
-  /* ── Layout ── */
   .page { display: flex; flex-direction: column; min-height: 100vh; width: 100%; }
   .inner { max-width: 620px; margin: 0 auto; width: 100%; }
 
-  /* ── Top band ── */
   .top-band { background: #002147; text-align: center; padding: 9px 16px 0; }
   .top-band-kicker { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; color: #fff; text-transform: uppercase; margin-bottom: 9px; }
   .red-rule { height: 2px; background: #CE1126; }
 
-  /* ── Hero ── */
+  /* ── Series Nav ── */
+  .series-nav { background: #F7F7F5; border-bottom: 1px solid #E8E8E8; padding: 7px 20px; }
+  .series-nav-inner { max-width: 620px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .series-label { font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #888; }
+  .series-pill { font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 9px; border-radius: 3px; white-space: nowrap; text-decoration: none; }
+  .series-pill-active { background: #14213D; color: #fff; }
+  .series-pill-inactive { background: #F0F0F0; color: #888; }
+
   .hero { background: #fff; text-align: center; padding: 18px 20px 0; }
   .headline { font-size: 34px; font-weight: 900; line-height: 1.0; margin: 0 0 6px; color: #002147; letter-spacing: -0.025em; }
   .subhead { font-size: 12px; color: #666; line-height: 1.5; margin: 0 0 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -29,7 +34,6 @@
   .byline { font-size: 10px; color: #666; margin-bottom: 12px; }
   .byline strong { color: #1A1A1A; }
 
-  /* ── Score strip ── */
   .score-strip { display: inline-flex; align-items: center; gap: 24px; margin-bottom: 4px; }
   .score-team { text-align: center; }
   .score-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 2px; }
@@ -37,7 +41,6 @@
   .score-q { font-size: 9px; color: #666; margin-top: 2px; }
   .score-final { font-size: 9px; font-weight: 800; letter-spacing: 0.16em; color: #666; text-transform: uppercase; }
 
-  /* ── Key stats row ── */
   .key-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; max-width: 500px; margin: 10px auto 12px; }
   .key-stat { border: 1px solid #E8E8E8; border-radius: 7px; padding: 8px 4px; text-align: center; }
   .key-stat-v { font-size: 20px; font-weight: 900; color: #CE1126; line-height: 1; }
@@ -45,7 +48,6 @@
 
   .divider { height: 1px; background: #E8E8E8; }
 
-  /* ── Tabs ── */
   .tabs { display: flex; justify-content: center; background: #fff; border-bottom: 1px solid #E8E8E8; }
   .tab-btn {
     background: none; border: none; cursor: pointer;
@@ -57,22 +59,18 @@
   }
   .tab-btn.active { font-weight: 700; color: #002147; border-bottom-color: #CE1126; }
 
-  /* ── Tab panel ── */
   .tab-panel { height: calc(100vh - 310px); min-height: 360px; overflow-y: auto; padding: 16px 20px 24px; background: #fff; flex: 1; }
 
-  /* ── Act elements ── */
   .act-label { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #CE1126; text-transform: uppercase; margin-bottom: 8px; }
   .act-h2 { font-size: 16px; font-weight: 800; margin: 0 0 6px; line-height: 1.2; color: #002147; }
   .act-body { font-size: 12px; color: #1A1A1A; line-height: 1.7; margin: 0 0 12px; }
 
-  /* ── Stat cards grid ── */
   .stat-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 12px; }
   .stat-card { background: #fff; border: 1px solid #E8E8E8; border-radius: 7px; padding: 9px 11px; }
   .stat-card-v { font-size: 22px; font-weight: 900; color: #CE1126; line-height: 1; }
   .stat-card-l { font-size: 11px; font-weight: 600; color: #002147; margin-top: 3px; }
   .stat-card-s { font-size: 10px; color: #666; margin-top: 1px; }
 
-  /* ── Bar rows ── */
   .bar-section { background: #fff; border: 1px solid #E8E8E8; border-radius: 9px; padding: 12px 14px; margin-bottom: 6px; }
   .bar-section-header { display: flex; justify-content: space-between; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px; }
   .bar-row { margin-bottom: 10px; }
@@ -80,13 +78,11 @@
   .bar-row-miss { color: #CE1126; font-weight: 700; min-width: 40px; }
   .bar-row-name { color: #1A1A1A; font-size: 11px; text-align: center; flex: 1; }
   .bar-row-aub { color: #99AABB; font-weight: 600; min-width: 40px; text-align: right; }
-  .bar-track { height: 4px; background: #F0F0F0; border-radius: 3; overflow: hidden; margin-bottom: 2px; }
-  .bar-track-sm { height: 3px; background: #F0F0F0; border-radius: 3; overflow: hidden; }
-  .bar-fill { height: 100%; border-radius: 3; }
-
+  .bar-track { height: 4px; background: #F0F0F0; border-radius: 3px; overflow: hidden; margin-bottom: 2px; }
+  .bar-track-sm { height: 3px; background: #F0F0F0; border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 3px; }
   .bar-legend { font-size: 10px; color: #666; margin-bottom: 12px; }
 
-  /* ── Quarter chart ── */
   .quarter-section { background: #fff; border: 1px solid #E8E8E8; border-radius: 9px; padding: 12px 14px; }
   .quarter-title { font-size: 11px; font-weight: 700; color: #002147; margin-bottom: 8px; }
   .quarter-legend { display: flex; gap: 14px; font-size: 10px; margin-bottom: 10px; }
@@ -100,7 +96,6 @@
   .q-label { font-size: 10px; font-weight: 600; color: #1A1A1A; margin-top: 4px; }
   .quarter-note { font-size: 11px; color: #1A1A1A; margin: 0; line-height: 1.3; }
 
-  /* ── Rebound callout ── */
   .reb-callout { background: #FEF2F2; border: 1px solid rgba(206,17,38,0.13); border-radius: 9px; padding: 12px 14px; margin-bottom: 10px; }
   .reb-inner { display: flex; gap: 14px; align-items: center; }
   .reb-num { text-align: center; min-width: 54px; }
@@ -108,18 +103,15 @@
   .reb-sublabel { font-size: 10px; color: #1A1A1A; margin-top: 2px; font-weight: 600; }
   .reb-text { flex: 1; border-left: 1px solid #E8E8E8; padding-left: 12px; font-size: 11px; color: #1A1A1A; line-height: 1.6; }
 
-  /* ── Auburn quarters box ── */
   .aub-q-box { background: #fff; border: 1px solid #E8E8E8; border-radius: 9px; padding: 12px 14px; }
   .aub-q-title { font-size: 11px; font-weight: 700; color: #002147; margin-bottom: 6px; }
   .aub-q-body { font-size: 11px; color: #1A1A1A; line-height: 1.65; margin: 0; }
 
-  /* ── SEC Network callout ── */
   .sec-callout { display: flex; align-items: center; gap: 10px; background: #002147; border-radius: 9px; padding: 9px 13px; margin-bottom: 10px; }
   .sec-badge { background: #CE1126; border-radius: 4px; padding: 3px 7px; font-size: 8px; font-weight: 800; color: #fff; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; }
   .sec-title { font-size: 12px; font-weight: 800; color: #fff; }
   .sec-sub { font-size: 10px; color: #9CA3AF; margin-top: 1px; }
 
-  /* ── Top performers ── */
   .performers { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-bottom: 10px; }
   .performer { background: #fff; border-radius: 9px; padding: 11px 12px; }
   .performer-tag { font-size: 9px; font-weight: 700; color: #CE1126; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 3px; }
@@ -129,7 +121,6 @@
   .p-stat-v { font-size: 16px; font-weight: 900; color: #CE1126; line-height: 1; }
   .p-stat-l { font-size: 9px; color: #666; margin-top: 1px; }
 
-  /* ── Team totals ── */
   .team-totals-box { background: #fff; border: 1px solid #E8E8E8; border-radius: 9px; padding: 12px 14px; margin-bottom: 10px; }
   .team-totals-title { font-size: 11px; font-weight: 700; color: #002147; letter-spacing: 0.04em; margin-bottom: 10px; }
   .team-totals-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; }
@@ -137,7 +128,6 @@
   .total-v { font-size: 20px; font-weight: 900; color: #CE1126; line-height: 1; }
   .total-l { font-size: 10px; color: #1A1A1A; margin-top: 3px; font-weight: 500; }
 
-  /* ── Box score ── */
   .box-score { background: #fff; border: 1px solid #E8E8E8; border-radius: 9px; overflow: hidden; margin-bottom: 6px; }
   .box-header { padding: 7px 12px; border-bottom: 1px solid #F0F0F0; display: flex; font-size: 9px; font-weight: 700; color: #666; letter-spacing: 0.1em; text-transform: uppercase; }
   .box-row { padding: 6px 12px; display: flex; align-items: center; cursor: pointer; border-bottom: 1px solid #F7F7F7; transition: background 0.15s; }
@@ -156,16 +146,13 @@
   .box-totals { padding: 7px 12px; border-top: 1px solid #E8E8E8; display: flex; font-size: 11px; font-weight: 700; color: #002147; background: #FAFAFA; }
   .box-hint { font-size: 10px; color: #666; margin-bottom: 14px; }
 
-  /* ── Closing statement ── */
   .closing { border-top: 1px solid #E8E8E8; padding-top: 14px; }
   .closing p { font-size: 12px; color: #1A1A1A; line-height: 1.75; margin: 0; font-style: italic; }
 
-  /* ── Footer ── */
   .footer { background: #002147; padding: 11px 20px; text-align: center; }
   .footer-text { font-size: 10px; color: #fff; line-height: 1.85; }
   .footer-muted { color: rgba(255,255,255,0.5); margin-top: 2px; }
 
-  /* ── Responsive ── */
   @media (max-width: 480px) {
     .tab-panel { height: calc(100vh - 340px); }
     .score-num { font-size: 36px; }
@@ -178,7 +165,6 @@
 <div class="page" id="app"></div>
 
 <script>
-// ── Data ──────────────────────────────────────────────────
 const quarterData = [
   { q:"Q1", miss:21, aub:6 },
   { q:"Q2", miss:27, aub:14 },
@@ -208,7 +194,7 @@ const statCards = [
   { v:"63%",     l:"1st Half FG%",             s:"SEC Network broadcast" },
   { v:"67%",     l:"1st Half 3PT%",             s:"SEC Network broadcast" },
   { v:"8 of 11", l:"Layups, 1st Half",          s:"72.7% conversion" },
-  { v:"×4.5",    l:"Iwuala Scoring Multiplier", s:"UCLA to Ole Miss" },
+  { v:"x4.5",    l:"Iwuala Scoring Multiplier", s:"UCLA to Ole Miss" },
 ];
 
 const teamTotals = [
@@ -248,11 +234,9 @@ const performers = [
     stats:[{v:"13",l:"PTS"},{v:"4",l:"REB"},{v:"6 of 9",l:"FG"},{v:"3",l:"BLK"}] },
 ];
 
-// ── State ─────────────────────────────────────────────────
 let activeTab = 0;
 let activePlayer = null;
 
-// ── Helpers ───────────────────────────────────────────────
 function barRow(r) {
   const max = r.pct ? 100 : Math.max(r.miss, r.aub) * 1.4;
   const missW = ((r.miss / max) * 100).toFixed(1);
@@ -312,7 +296,6 @@ function boxRow(p) {
     </div>`;
 }
 
-// ── Render ────────────────────────────────────────────────
 function render() {
   const app = document.getElementById('app');
 
@@ -321,7 +304,6 @@ function render() {
       <div class="act-label">Act I · Dictation: Offensive Stats</div>
       <h2 class="act-h2">Ole Miss shot 63 percent in the first half. That is not an accident.</h2>
       <p class="act-body">63% from the field, 67% from three, 8 of 11 on layups in the first half. By halftime Ole Miss led 48 to 20. When you dictate the terms before Auburn can establish anything, the scoreboard becomes a formality.</p>
-
       <div class="stat-cards">
         ${statCards.map(c => `
           <div class="stat-card">
@@ -330,7 +312,6 @@ function render() {
             <div class="stat-card-s">${c.s}</div>
           </div>`).join('')}
       </div>
-
       <div class="bar-section">
         <div class="bar-section-header">
           <span style="color:#CE1126">OLE MISS</span>
@@ -340,7 +321,6 @@ function render() {
         ${offenseRows.map(r => barRow(r)).join('')}
       </div>
       <div class="bar-legend"><span style="color:#CE1126;font-weight:700">Red</span> = Ole Miss &nbsp;·&nbsp; <span style="color:#99AABB;font-weight:700">Faint blue</span> = Auburn</div>
-
       <div class="quarter-section">
         <div class="quarter-title">POINTS BY QUARTER</div>
         <div class="quarter-legend">
@@ -357,7 +337,6 @@ function render() {
       <div class="act-label">Act II · Disruption: Defensive Stats</div>
       <h2 class="act-h2">Auburn shot 32.7 percent. Ole Miss made that number.</h2>
       <p class="act-body">Disruption is not just steals and blocks. It is forcing bad looks, collapsing on the glass, and making every possession feel contested. Auburn went 17 of 52 from the field with Ole Miss's length and pressure accounting for most of the misses.</p>
-
       <div class="bar-section">
         <div class="bar-section-header">
           <span style="color:#CE1126">OLE MISS</span>
@@ -367,7 +346,6 @@ function render() {
         ${defenseRows.map(r => barRow(r)).join('')}
       </div>
       <div class="bar-legend"><span style="color:#CE1126;font-weight:700">Red</span> = Ole Miss &nbsp;·&nbsp; <span style="color:#99AABB;font-weight:700">Faint blue</span> = Auburn</div>
-
       <div class="reb-callout">
         <div class="reb-inner">
           <div class="reb-num">
@@ -381,7 +359,6 @@ function render() {
           <p class="reb-text">Ole Miss won the glass nearly 2 to 1. Thirteen offensive rebounds and fourteen second-chance points. That is possessions manufactured out of nothing.</p>
         </div>
       </div>
-
       <div class="aub-q-box">
         <div class="aub-q-title">THE QUARTERS AUBURN WON</div>
         <p class="aub-q-body">Auburn outscored Ole Miss 17 to 10 in Q3 and 20 to 15 in Q4, going 42.9% from three in the fourth quarter. Ole Miss had already put the game away. The disruption happened in the first half, and by the time Auburn found any rhythm, the argument was settled.</p>
@@ -393,7 +370,6 @@ function render() {
       <div class="act-label">Act III · The Win</div>
       <h2 class="act-h2">Ole Miss did not close a game. They closed an argument.</h2>
       <p class="act-body">Eleven players logged minutes. The bench outscored Auburn's second unit 35 to 14. When depth wins that matchup by 21, that is not a roster. That is a program.</p>
-
       <div class="sec-callout">
         <span class="sec-badge">SEC Network</span>
         <div>
@@ -401,7 +377,6 @@ function render() {
           <div class="sec-sub">Longest streak by any Ole Miss player this season</div>
         </div>
       </div>
-
       <div class="performers">
         ${performers.map(p => `
           <div class="performer" style="border:${p.border ? '2px solid #CE1126' : '1px solid #E8E8E8'}">
@@ -413,7 +388,6 @@ function render() {
             </div>
           </div>`).join('')}
       </div>
-
       <div class="team-totals-box">
         <div class="team-totals-title">TEAM TOTALS THAT SEALED IT</div>
         <div class="team-totals-grid">
@@ -424,7 +398,6 @@ function render() {
             </div>`).join('')}
         </div>
       </div>
-
       <div class="box-score">
         <div class="box-header">
           <span style="flex:2.5">Player</span>
@@ -443,16 +416,15 @@ function render() {
         </div>
       </div>
       <div class="box-hint">Tap any row for notes · Starters marked</div>
-
       <div class="closing">
         <p>"Dictate and disrupt" is not a slogan. It is a system. A 21 to 6 first quarter. A 63% first half. The longest field goal streak of the season. A bench that outscored Auburn's second unit by 21. Ole Miss did not survive today. They imposed their will from the opening tip and never let Auburn breathe.</p>
       </div>
     </div>`;
 
   const tabs = [
-    { label:"Act I · Dictation",  content: actI },
-    { label:"Act II · Disruption", content: actII },
-    { label:"Act III · The Win",  content: actIII },
+    { label:"Act I · Dictation",   content: actI   },
+    { label:"Act II · Disruption", content: actII  },
+    { label:"Act III · The Win",   content: actIII },
   ];
 
   app.innerHTML = `
@@ -461,17 +433,21 @@ function render() {
       <div class="red-rule"></div>
     </div>
 
+    <div class="series-nav">
+      <div class="series-nav-inner">
+        <span class="series-label">Series</span>
+        <span class="series-pill series-pill-active">Night 1 · vs Auburn</span>
+        <a href="https://theblacktechie.github.io/olemisswbbsectourney2/" class="series-pill series-pill-inactive">Night 2 · vs Vanderbilt</a>
+      </div>
+    </div>
+
     <div class="hero">
       <h1 class="headline">Dictate &amp; Disrupt</h1>
       <p class="subhead">What Ole Miss Women's Basketball's culture, identity and motto looks like during their win over Auburn.</p>
-
       <div class="hero-quote">
         <p>"The team is back, and we were going to dictate and disrupt for 40 minutes."</p>
         <cite>Coach Yolett McPhee-McCuin · SEC Network · March 4, 2026</cite>
       </div>
-
-      <div class="byline">Data visualization by <strong>Kris E. Smith</strong></div>
-
       <div class="score-strip">
         <div class="score-team">
           <div class="score-label" style="color:#CE1126">#7 Ole Miss</div>
@@ -485,7 +461,6 @@ function render() {
           <div class="score-q">6 · 14 · 17 · 20</div>
         </div>
       </div>
-
       <div class="key-stats inner">
         ${keyStats.map(s => `
           <div class="key-stat">
